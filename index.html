@@ -7,14 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tsis</title>
     <style>
-        body {
-            background-color: rgb(117, 201, 201);
+        .flex-container {
+            display:flex;
+            justify-content:center;
         }
-        div {
-            width: 300px;
+        body {
+            background-color: rgb(117, 201, 201); 
+        }
+        #id {
+            width: 15%;
+            border: 15px solid rgb(101, 83, 207);
+            padding: 5%;
+            margin: 5%;
+        }
+        #id2 {
+            width: 15%;
             border: 15px solid rgb(101, 83, 207);
             padding: 50px;
-            margin: 20px;
+            margin: 5%;
+            align-self: center;
+            flex-grow: 8;
         }
         h1 {
             background-color: black;
@@ -43,24 +55,36 @@
 
 <body>
     <h1>POKÉMON</h1>
-    <div>
-    <h2>LISTA DOS POKÉMON MAIS LEGAIS</h2>
-    <ol>
-        <li id="para1">Feraligatr<br><img
-                src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/e/e1/160-Feraligatr.png"
-                alt="Pokemon Feraligatr" width="150" height="135"></il>
-        <li id="para2">Arcanine<br><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png"
-                alt="Pokemon Arcanine" width="150" height="135"></li>
-        <li id="para3">Blastoise<br><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png"
-                alt="Pokemon Blastoise" width="150" height="135"></li>
-    </ol>
+    <div class="flex-container">
+        <div id="id">
+        <h2>LISTA DOS POKÉMON MAIS LEGAIS</h2>
+        <ol>
+            <li id="para1">Feraligatr<br><img
+                    src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/e/e1/160-Feraligatr.png"
+                    alt="Pokemon Feraligatr" width="150" height="135"></il>
+            <li id="para2">Arcanine<br><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png"
+                    alt="Pokemon Arcanine" width="150" height="135"></li>
+            <li id="para3">Blastoise<br><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png"
+                    alt="Pokemon Blastoise" width="150" height="135"></li>
+        </ol>
+        </div>
+        <div id="id2">
+            <h2>LISTA DE POKÉMON INUTEIS</h2>
+            <ul>
+                <li>Regigigas</li>
+                <li>Eevee shiny</li>
+                <li>Butterfree</li>
+                </ul>
+        </div>
+        <div id="id2">
+            <h2>TESTE</h2>
+            <ol>
+                <li>Primeiro</li>
+                <li>Segundo</li>
+                <li>Terceiro</li>
+            </ol>
+        </div>
     </div>
-    <h2>LISTA DE POKÉMON INUTEIS</h2>
-    <ul>
-        <li>Regigigas</li>
-        <li>Eevee shiny</li>
-        <li>Butterfree</li>
-    </ul>
 </body>
 
 </html>
